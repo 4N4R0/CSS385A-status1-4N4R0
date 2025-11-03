@@ -1,0 +1,14 @@
+One-Pager: Performance Considerations
+Ana Rocha
+
+Identify 3 sources of performance concerns for games similar to yours:
+•	Real-time Input Handling: Games as Drawful and StopotS two rely on quick responses from several players at the same time. If the device cannot process inputs fairly or quickly, players could experience lag or even delayed feedback.
+•	Data Management and Game State Updates: Each round consists of sending scores, answers, and words between players. To manage these updates efficiently, particularly as additional players join, can easily impede the game or even cause desyncs.
+•	Asset Loading and UI Responsiveness: Visuals, animations, or sounds (like timers, word reveals, or maybe scoreboards) is able to result in slowdowns if it is not optimized. Loading way too many components right away tends to make the interface feel laggy and also unresponsive.
+Identify at least one common strategy to address each performance concern:
+•	Real-time Input Handling' Use input buffering or maybe frame capping to confirm constant timing and fairness.
+•	Data Management' Use effective data structures and caching to shop often used info rather than reloading or perhaps recalculating it every time.
+•	Asset Loading/UI' Use sluggish loading plus asset compression therefore just required images or maybe audio load during gameplay, decreasing startup time and lag.
+Summarize how you might use one or more such strategies for your own game and why:
+In my game I plan to use lazy loading and caching to make it feel smoother and more responsive. For example, I will preload only the first round’s assets (the first round clue) and load later clues in the background while players are guessing. I will likewise cache player data, like names or scores, so they do not reload every round. These strategies can help maintain the gameplay fast, reduce lag, and make a much better overall experience.
+
